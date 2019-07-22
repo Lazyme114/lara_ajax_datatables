@@ -9,15 +9,16 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('backend/Bootstrap-4-4.1.1/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/datatables.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/DataTables-1.10.18/css/dataTables.bootstrap4.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/AutoFill-2.3.3/css/autoFill.bootstrap4.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/Buttons-1.5.6/css/buttons.bootstrap4.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/ColReorder-1.5.0/css/colReorder.bootstrap4.css') }}">
 </head>
 <body>
     <div id="app">
@@ -76,5 +77,13 @@
             @yield('content')
         </main>
     </div>
+
+
+    <script src="{{ asset('backend/jQuery-3.3.1/jquery-3.3.1.js') }}"></script>
+    <script src="{{ asset('backend/Bootstrap-4-4.1.1/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('backend/datatables.js') }}"></script>
+    <script src="{{ asset('backend/DataTables-1.10.18/js/dataTables.bootstrap4.js') }}"></script>
+    <script src="{{ asset('backend/Buttons-1.5.6/js/buttons.bootstrap4.js') }}"></script>
+    <script src="{{ asset('backend/ColReorder-1.5.0/js/colReorder.bootstrap4.js') }}"></script>
 </body>
 </html>
